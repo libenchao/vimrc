@@ -8,5 +8,5 @@ Clone this repo to your local file system. Then make an symbolic link to your ho
 ```
 git clone git@github.com:libenchao/vimrc.git
 cd vimrc
-ln -s .vimrc.local ~/.vimrc.local
+ln -sf <full-path>/vimrc.vim ~/.vimrc.local
 ```
