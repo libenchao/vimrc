@@ -1,5 +1,16 @@
-" this is for reference.
-" <c-e> to open side bar of directory
+" =================reference start===================
+"
+" NERDTree (for showing directory tree)
+" <c-e>            to open side bar of directory.
+" <leader>e        to detect corrent file's directory and show it.
+"
+" NERDCommenter (for commenting and uncommenting)
+" <leader>c<space> to comment and uncomment block codes.
+" <leader>$        to comment from cursor to the end of line.
+" <leader>cA       to add comment delimiter to the end of line and goes into insert
+"                  mode between them
+"
+" =================reference end=====================
 
 " move lines up and down
 noremap - :m .+1<CR>
