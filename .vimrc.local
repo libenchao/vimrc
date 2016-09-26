@@ -6,7 +6,7 @@
 "
 " NERDCommenter (for commenting and uncommenting)
 " <leader>c<space> to comment and uncomment block codes.
-" <leader>$        to comment from cursor to the end of line.
+" <leader>c$       to comment from cursor to the end of line.
 " <leader>cA       to add comment delimiter to the end of line and goes into insert
 "                  mode between them
 "
