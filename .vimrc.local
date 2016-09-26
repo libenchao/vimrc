@@ -12,6 +12,10 @@
 "
 " =================reference end=====================
 
+" paste using ctrl+v
+inoremap <c-v> <esc>p$a
+nnoremap <c-v> p
+
 " move lines up and down
 noremap - :m .+1<CR>
 noremap _ :m .-2<CR>
@@ -23,12 +27,13 @@ inoremap <c-d> <esc>ddi
 iabbrev inlcude include
 iabbrev itn int
 
-" set iabbrev to short words
+" set iabbrev to shorten words
 iabbrev umap unordered_map
 iabbrev uset unordered_set
 iabbrev @@ libenchao@gmail.com
 iabbrev #i #include
 
+" for easy editing .vimrc.local
 nnoremap <leader>ev :vsplit ~/.vimrc.local<CR>
 nnoremap <leader>sv :source $MYVIMRC<CR>
 
