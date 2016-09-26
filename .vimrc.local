@@ -1,9 +1,6 @@
 " this is for reference.
 " <c-e> to open side bar of directory
 
-
-let mapleader = ","
-
 " move lines up and down
 noremap - :m .+1<CR>
 noremap _ :m .-2<CR>
