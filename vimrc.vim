@@ -46,6 +46,9 @@ iabbrev uset unordered_set
 iabbrev @@ libenchao@gmail.com
 iabbrev #i #include
 
+" set iabbrev to some autocmd
+autocmd FileType cpp :iabbrev <buffer> return return;<left>
+
 " for easy editing .vimrc.local
 nnoremap <leader>ev :vsplit ~/.vimrc.local<CR>
 nnoremap <leader>sv :source $MYVIMRC<CR>
