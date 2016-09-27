@@ -47,7 +47,7 @@ nnoremap <leader>sv :source $MYVIMRC<CR>
 nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
 nnoremap <leader>' viw<esc>a'<esc>hbi'<esc>lel
 vnoremap <leader>" <esc><esc>`<i"<esc>`>a"<esc>lel
-vnoremap <leader>" <esc><esc>`<i'<esc>`>a'<esc>lel
+vnoremap <leader>' <esc><esc>`<i'<esc>`>a'<esc>lel
 nnoremap H ^
 nnoremap L $
 
