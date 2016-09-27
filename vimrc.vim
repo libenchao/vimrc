@@ -56,3 +56,5 @@ vnoremap <leader>' <esc><esc>`<i'<esc>`>a'<esc>lel
 nnoremap H ^
 nnoremap L $
 
+" wrap long lines
+set wrap
