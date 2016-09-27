@@ -19,7 +19,9 @@
 
 " paste using ctrl+v
 inoremap <c-v> <esc>p$a
-nnoremap <c-v> p
+
+" ctrl+s to save file
+inoremap <c-s> <esc>:w<CR>a
 
 " move lines up and down
 noremap - :m .+1<CR>
