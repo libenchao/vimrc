@@ -23,6 +23,12 @@ noremap _ :m .-2<CR>
 " delete one line in insert mode
 inoremap <c-d> <esc>ddi
 
+" convert current word to uppercase in insert mode
+inoremap <c-u> <esc>viwUwa
+
+" convert current word to uppercase in normal mode
+nnoremap <c-u> viwU
+
 " set iabbrev to correct typos
 iabbrev inlcude include
 iabbrev itn int
