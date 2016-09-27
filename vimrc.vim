@@ -1,4 +1,9 @@
 " =================reference start===================
+" 
+" common usage:
+" g<c-g>           (in visual mode) calculate words and chars
+" gt               (in normal mode) switch tabs
+" :tabe <filename> to open a new tab
 "
 " NERDTree (for showing directory tree)
 " <c-e>            to open side bar of directory.
