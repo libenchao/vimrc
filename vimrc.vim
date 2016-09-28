@@ -2,12 +2,15 @@
 " 
 " common usage:
 " g<c-g>           (in visual mode) calculate words and chars
-" gt               (in normal mode) switch tabs
+" <c-h>            to move to left tab
+" <c-l>            to move to right tab
 " :tabe <filename> to open a new tab
 "
 " NERDTree (for showing directory tree)
 " <c-e>            to open side bar of directory.
 " <leader>e        to detect corrent file's directory and show it.
+" t                to open a file in new tab.
+" o                to open a file in current tab.
 "
 " NERDCommenter (for commenting and uncommenting)
 " <leader>c<space> to comment and uncomment block codes.
