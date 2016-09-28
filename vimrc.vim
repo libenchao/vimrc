@@ -47,7 +47,10 @@ iabbrev @@ libenchao@gmail.com
 iabbrev #i #include
 
 " set iabbrev to some autocmd
-autocmd FileType cpp :iabbrev <buffer> return return;<left>
+augroup autos_for_cpp
+    autocmd!
+    autocmd FileType cpp :iabbrev <buffer> return return;<left>
+augroup END
 
 " for easy editing .vimrc.local
 nnoremap <leader>ev :vsplit ~/.vimrc.local<CR>
