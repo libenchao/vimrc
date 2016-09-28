@@ -72,5 +72,6 @@ nnoremap <c-l> gt
 set wrap
 
 " for NERDTree to open files in new tab
-let NERDTreeMapOpenInTab='<ENTER>'
+" in menu: `t` to open a file in new tab, `o` to open a file in current tab.
+let NERDTreeMapOpenInTab='t'
 let NERDTreeQuitOnOpen=0
