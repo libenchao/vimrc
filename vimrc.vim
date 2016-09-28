@@ -56,13 +56,21 @@ augroup END
 nnoremap <leader>ev :vsplit ~/.vimrc.local<CR>
 nnoremap <leader>sv :source $MYVIMRC<CR>
 
-" for quoting and move cursor easily
+" for quoting
 nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
 nnoremap <leader>' viw<esc>a'<esc>hbi'<esc>lel
 vnoremap <leader>" <esc><esc>`<i"<esc>`>a"<esc>lel
 vnoremap <leader>' <esc><esc>`<i'<esc>`>a'<esc>lel
+
+" for moving easily
 nnoremap H ^
 nnoremap L $
+nnoremap <c-h> gT
+nnoremap <c-l> gt
 
 " wrap long lines
 set wrap
+
+" for NERDTree to open files in new tab
+let NERDTreeMapOpenInTab='<ENTER>'
+let NERDTreeQuitOnOpen=0
