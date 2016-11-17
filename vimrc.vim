@@ -1,5 +1,10 @@
 " =================reference start===================
 " 
+" movement:
+" t)               until ), can be any char, `dt)` delete until ).
+" /return<cr>      before `return` line. d/return<cr> can delete until return
+"                  line.
+"
 " common usage:
 " g<c-g>           (in visual mode) calculate words and chars
 " <c-h>            to move to left tab
@@ -11,6 +16,7 @@
 " <leader>e        to detect corrent file's directory and show it.
 " t                to open a file in new tab.
 " o                to open a file in current tab.
+" <enter>          to open a file in current tab.
 "
 " NERDCommenter (for commenting and uncommenting)
 " <leader>c<space> to comment and uncomment block codes.

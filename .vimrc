@@ -133,3 +133,6 @@ set termencoding=utf-8
 set encoding=utf-8
 
 colorscheme solarized
+
+" for mac bug
+set backspace=2
