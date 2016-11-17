@@ -116,12 +116,15 @@ set nu
 " tab setting
 set tabstop=4
 set expandtab
+set shiftwidth=4
+set softtabstop=4
 
 " always show current position
 set ruler
 
 " auto indent
 set autoindent
+set smarttab
 
 " background
 set background=dark
