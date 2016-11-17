@@ -59,9 +59,6 @@ Plugin 'majutsushi/tagbar'
 map <leader>t :TagbarToggle<CR>
 
 
-" Plugin 'artur-shaik/vim-javacomplete2'
-
-
 Plugin 'altercation/vim-colors-solarized'
 
 
@@ -95,10 +92,11 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""below is my own setttings""""""""""""""""""""""
-
-" syntax on
-syntax enable on
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" set syntax
+syntax on
 
 " turn backup off
 set nobackup
@@ -128,10 +126,12 @@ set autoindent
 " background
 set background=dark
 
+" set encoding
 set fileencodings=utf-8,gb2312,gbk,gb18030
 set termencoding=utf-8
 set encoding=utf-8
 
+" set colorscheme
 colorscheme solarized
 
 " for mac bug
