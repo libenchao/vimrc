@@ -42,9 +42,7 @@ let NERDTreeKeepTreeInNewTab = 1
 " to use mouse
 let NERDTreeMouseMode = 2
 " to open or close nerdtree
-map <C-E> :NERDTreeToggle<CR>
-" to find current dir and open it
-map <leader>e :NERDTreeFind<CR>
+map <leader>d :NERDTreeToggle<CR>
 
 
 Plugin 'jistr/vim-nerdtree-tabs'
@@ -56,9 +54,15 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'airblade/vim-gitgutter'
 
 
+Plugin 'majutsushi/tagbar'
+" keys for open and close tagbar
+map <leader>t :TagbarToggle<CR>
+
+
+" Plugin 'artur-shaik/vim-javacomplete2'
+
+
 Plugin 'altercation/vim-colors-solarized'
-" more colors
-" let g:solarized_termcolors = 256
 
 
 Plugin 'scrooloose/nerdcommenter'
@@ -94,7 +98,7 @@ filetype plugin indent on    " required
 """""""""""""""""""below is my own setttings""""""""""""""""""""""
 
 " syntax on
-syntax enable
+syntax enable on
 
 " turn backup off
 set nobackup
@@ -128,5 +132,4 @@ set fileencodings=utf-8,gb2312,gbk,gb18030
 set termencoding=utf-8
 set encoding=utf-8
 
-set background=dark
-colorscheme default
+colorscheme solarized
