@@ -94,6 +94,9 @@ autocmd FileType java setlocal omnifunc=javacomplete#Complete
 Plugin 'vim-scripts/AutoComplPop'
 
 
+Plugin 'ervandew/supertab'
+
+
 Plugin 'altercation/vim-colors-solarized'
 
 
