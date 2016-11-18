@@ -83,6 +83,17 @@ let g:syntastic_check_on_wq = 0
 " reboot the system.
 
 
+Plugin 'artur-shaik/vim-javacomplete2'
+" caution: needs high vim version, and a little slow when open java files.
+" to open auto complete for java
+autocmd FileType java setlocal omnifunc=javacomplete#Complete
+" to use vim-javacomplete2, <c-x-o>
+" also, JCimport*, JCgenerate* has many useful commands
+
+
+Plugin 'vim-scripts/AutoComplPop'
+
+
 Plugin 'altercation/vim-colors-solarized'
 
 
