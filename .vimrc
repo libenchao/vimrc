@@ -58,7 +58,9 @@ Plugin 'airblade/vim-gitgutter'
 
 Plugin 'ctrlpvim/ctrlp.vim'
 " to find file using filename.
-nnoremap <leader>cl :CtrlP<CR>
+nnoremap <leader>f :CtrlP<CR>
+" to show hiddle files
+let g:ctrlp_show_hidden = 1
 
 
 Plugin 'mileszs/ack.vim'
