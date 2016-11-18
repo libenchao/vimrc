@@ -203,3 +203,6 @@ set cursorline
 " for easier moving between tabs
 nnoremap <leader>j gT
 nnoremap <leader>k gt
+
+" set mouse moving
+set mouse=a
