@@ -94,6 +94,10 @@ autocmd FileType java setlocal omnifunc=javacomplete#Complete
 Plugin 'vim-scripts/AutoComplPop'
 
 
+Plugin 'klen/python-mode'
+" bug: can only use print()
+
+
 Plugin 'ervandew/supertab'
 
 
