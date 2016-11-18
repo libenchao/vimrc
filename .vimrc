@@ -46,12 +46,22 @@ map <leader>d :NERDTreeToggle<CR>
 
 
 Plugin 'jistr/vim-nerdtree-tabs'
+" bug, if set 1, startup shows NERDTree, if set 0, new tab will now show NERDTree
+" let g:nerdtree_tabs_open_on_console_startup=1
 
 
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 
 Plugin 'airblade/vim-gitgutter'
+
+
+Plugin 'ctrlpvim/ctrlp.vim'
+
+
+Plugin 'mileszs/ack.vim'
+" shortcut to use ack
+nnoremap <Leader>a :Ack!<Space>
 
 
 Plugin 'majutsushi/tagbar'
@@ -106,9 +116,10 @@ set noswapfile
 " show matching bracets
 set showmatch
 
-" ignore case when searching
+" search setting
 set ignorecase
 set incsearch
+set hlsearch
 
 " show line number
 set nu
@@ -139,3 +150,10 @@ colorscheme solarized
 
 " for mac bug
 set backspace=2
+
+" cursor setting
+set cursorline
+" set cursorcolumn
+let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+let &t_SR = "\<Esc>]50;CursorShape=2\x7"
+let &t_EI = "\<Esc>]50;CursorShape=0\x7"
