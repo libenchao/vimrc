@@ -41,13 +41,11 @@ let NERDTreeShowHidden = 1
 let NERDTreeKeepTreeInNewTab = 1
 " to use mouse
 let NERDTreeMouseMode = 2
-" to open or close nerdtree
-map <leader>d :NERDTreeToggle<CR>
 
 
 Plugin 'jistr/vim-nerdtree-tabs'
-" bug, if set 1, startup shows NERDTree, if set 0, new tab will now show NERDTree
-" let g:nerdtree_tabs_open_on_console_startup=1
+" to open or close nerdtree
+map <leader>d :NERDTreeTabsToggle<CR>
 
 
 Plugin 'Xuyuanp/nerdtree-git-plugin'
