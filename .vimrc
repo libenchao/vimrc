@@ -79,8 +79,8 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-" for maven projects
-let g:syntastic_java_javac_autoload_maven_classpath = 0
+" for maven project, need to run `mvn dependency:build-classpath`, even to
+" reboot the system.
 
 
 Plugin 'altercation/vim-colors-solarized'
