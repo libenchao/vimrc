@@ -49,21 +49,25 @@ map <leader>d :NERDTreeTabsToggle<CR>
 
 
 Plugin 'Xuyuanp/nerdtree-git-plugin'
+" for git status in nerdtree
 
 
 Plugin 'airblade/vim-gitgutter'
+" for git status for files managed by git
 
 
 Plugin 'ctrlpvim/ctrlp.vim'
+" to find file using filename.
+nnoremap <leader>cl :CtrlP<CR>
 
 
 Plugin 'mileszs/ack.vim'
-" shortcut to use ack
+" to find file using keywords. This needs `ack` in path.
 nnoremap <Leader>a :Ack!<Space>
 
 
 Plugin 'majutsushi/tagbar'
-" keys for open and close tagbar
+" to show tags for current file.
 map <leader>t :TagbarToggle<CR>
 
 
@@ -75,7 +79,7 @@ set statusline+=%*
 " some suggestion settings
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 " for maven project, need to run `mvn dependency:build-classpath`, even to
 " reboot the system.
@@ -90,6 +94,7 @@ autocmd FileType java setlocal omnifunc=javacomplete#Complete
 
 
 Plugin 'vim-scripts/AutoComplPop'
+" to automatically pop some candidates for <c-p>
 
 
 Plugin 'klen/python-mode'
@@ -97,9 +102,11 @@ Plugin 'klen/python-mode'
 
 
 Plugin 'ervandew/supertab'
+" seems little useful
 
 
 Plugin 'altercation/vim-colors-solarized'
+" good colorscheme
 
 
 Plugin 'scrooloose/nerdcommenter'
@@ -111,6 +118,7 @@ let g:NERDDefaultAlign = 'left'
 let g:NERDCommentEmptyLines = 1
 " Enable trimming of trailing whitespace when uncommenting
 let g:NERDTrimTrailingWhitespace = 1
+" <leader>,<space> to trigger
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -178,7 +186,7 @@ set encoding=utf-8
 " set colorscheme
 colorscheme solarized
 
-" for mac bug
+" for mac bug, `return` cannot use.
 set backspace=2
 
 " cursor setting
