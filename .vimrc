@@ -69,6 +69,20 @@ Plugin 'majutsushi/tagbar'
 map <leader>t :TagbarToggle<CR>
 
 
+Plugin 'vim-syntastic/syntastic'
+" set statuslines
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+" some suggestion settings
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+" for maven projects
+let g:syntastic_java_javac_autoload_maven_classpath = 0
+
+
 Plugin 'altercation/vim-colors-solarized'
 
 
