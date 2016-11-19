@@ -201,11 +201,13 @@ set cursorline
 " let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 
 " for easier moving between tabs
-nnoremap <leader>j gT
-nnoremap <leader>k gt
+nnoremap tj gT
+nnoremap tk gt
 
 " set mouse moving
 set mouse=a
 
 " set fold method, zc to fold, zo to open
 set foldmethod=syntax
+set foldlevel=20
+set foldlevelstart=20
