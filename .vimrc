@@ -206,3 +206,6 @@ nnoremap <leader>k gt
 
 " set mouse moving
 set mouse=a
+
+" set fold method, zc to fold, zo to open
+set foldmethod=syntax
