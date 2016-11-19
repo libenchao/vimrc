@@ -202,7 +202,15 @@ set cursorline
 
 " for easier moving between tabs
 nnoremap tj gT
+nnoremap th gT
 nnoremap tk gt
+nnoremap tl gt
+
+" for easier moving between windows
+nnoremap wh <c-w>h
+nnoremap wj <c-w>j
+nnoremap wk <c-w>k
+nnoremap wl <c-w>l
 
 " set mouse moving
 set mouse=a
@@ -211,3 +219,4 @@ set mouse=a
 set foldmethod=syntax
 set foldlevel=20
 set foldlevelstart=20
+
