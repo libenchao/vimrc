@@ -46,6 +46,7 @@ let NERDTreeMouseMode = 2
 Plugin 'jistr/vim-nerdtree-tabs'
 " to open or close nerdtree
 map <leader>d :NERDTreeTabsToggle<CR>
+" to manipulate dirs and files like create and delete, `m` to list operations.
 
 
 Plugin 'Xuyuanp/nerdtree-git-plugin'
