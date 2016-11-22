@@ -110,6 +110,7 @@ Plugin 'ervandew/supertab'
 
 Plugin 'lrvick/Conque-Shell'
 " usage: :ConqueTermSplit zsh
+nnoremap <leader>s :ConqueTermSplit<Space>
 
 
 Plugin 'altercation/vim-colors-solarized'
