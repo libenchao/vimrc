@@ -221,3 +221,5 @@ set foldmethod=syntax
 set foldlevel=20
 set foldlevelstart=20
 
+" set completeopt
+set completeopt=menu,noinsert
