@@ -235,3 +235,6 @@ set timeoutlen=500
 
 " set completeopt
 set completeopt=menu,noinsert
+
+" set colorcolumn
+set colorcolumn=80
