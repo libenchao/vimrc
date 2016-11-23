@@ -110,7 +110,11 @@ Plugin 'ervandew/supertab'
 
 Plugin 'lrvick/Conque-Shell'
 " usage: :ConqueTermSplit zsh
-nnoremap <leader>s :ConqueTermSplit<Space>
+if has('mac')
+    nnoremap <leader>s :ConqueTermSplit<Space>zsh<CR><CR>
+elseif has('unix')
+    nnoremap <leader>s :ConqueTermSplit<Space>bash<CR><CR>
+endif
 
 
 Plugin 'altercation/vim-colors-solarized'
@@ -227,7 +231,7 @@ set foldlevel=20
 set foldlevelstart=20
 
 " make shorter key timeout
-set timeoutlen=300
+set timeoutlen=500
 
 " set completeopt
 set completeopt=menu,noinsert
