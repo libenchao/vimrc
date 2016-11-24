@@ -238,3 +238,4 @@ set completeopt=menu,noinsert
 
 " set colorcolumn
 set colorcolumn=80
+highlight ColorColumn ctermbg=6
