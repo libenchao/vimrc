@@ -239,3 +239,9 @@ set completeopt=menu,noinsert
 " set colorcolumn
 set colorcolumn=80
 highlight ColorColumn ctermbg=6
+
+" set clipboard
+set clipboard=unamed
+
+" for easier quiting vim
+nnoremap zz :wq<CR>
