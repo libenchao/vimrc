@@ -241,7 +241,7 @@ set colorcolumn=80
 highlight ColorColumn ctermbg=6
 
 " set clipboard
-set clipboard=unamed
+set clipboard=unnamed
 
 " for easier quiting vim
 nnoremap zz :wq<CR>
