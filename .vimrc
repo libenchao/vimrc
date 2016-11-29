@@ -86,6 +86,7 @@ let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 " for maven project, need to run `mvn dependency:build-classpath`, even to
 " reboot the system.
+" for ant project or others, :SyntasticJavacEditConfig to edit the classpath.
 
 
 Plugin 'artur-shaik/vim-javacomplete2'
@@ -245,3 +246,6 @@ set clipboard=unnamed
 
 " for easier quiting vim
 nnoremap zz :wq<CR>
+
+" to use ctags, we can `ctags -R .` to generate ctags
+" <c-]> to go to defination, <c-o> to go back, g<c-]> to list all candidates.
