@@ -238,7 +238,7 @@ set timeoutlen=500
 set completeopt=menu,noinsert
 
 " set colorcolumn
-set colorcolumn=80
+set colorcolumn=100
 highlight ColorColumn ctermbg=6
 
 " set clipboard
