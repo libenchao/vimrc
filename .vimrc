@@ -211,12 +211,6 @@ set cursorline
 " let &t_SR = "\<Esc>]50;CursorShape=2\x7"
 " let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 
-" for easier moving between windows
-nnoremap wh <c-w>h
-nnoremap wj <c-w>j
-nnoremap wk <c-w>k
-nnoremap wl <c-w>l
-
 " set mouse moving
 set mouse=a
 
