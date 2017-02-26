@@ -204,12 +204,6 @@ set backspace=2
 
 " cursor setting
 set cursorline
-" set cursorcolumn
-" bug, cursor will not show block at first, and when it shows block,
-" commandline will be affected too.
-" let &t_SI = "\<Esc>]50;CursorShape=1\x7"
-" let &t_SR = "\<Esc>]50;CursorShape=2\x7"
-" let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 
 " set mouse moving
 set mouse=a
