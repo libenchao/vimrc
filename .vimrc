@@ -74,37 +74,6 @@ Plugin 'majutsushi/tagbar'
 map <leader>t :TagbarToggle<CR>
 
 
-Plugin 'vim-syntastic/syntastic'
-" set statuslines
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-" some suggestion settings
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 0
-" for maven project, need to run `mvn dependency:build-classpath`, even to
-" reboot the system.
-" for ant project or others, :SyntasticJavacEditConfig to edit the classpath.
-
-
-Plugin 'artur-shaik/vim-javacomplete2'
-" caution: needs high vim version, and a little slow when open java files.
-" to open auto complete for java
-autocmd FileType java setlocal omnifunc=javacomplete#Complete
-" to use vim-javacomplete2, <c-x-o>
-" also, JCimport*, JCgenerate* has many useful commands
-
-
-Plugin 'vim-scripts/AutoComplPop'
-" to automatically pop some candidates for <c-p>
-
-
-Plugin 'klen/python-mode'
-" bug: can only use print()
-
-
 Plugin 'ervandew/supertab'
 " seems little useful
 
