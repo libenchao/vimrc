@@ -202,5 +202,9 @@ set wildmode=full
 " set history number
 set history=200
 
+" set <c-p> and <c-n> to behave like <up> and <down> in command line mode.
+cnoremap <c-p> <Up>
+cnoremap <c-n> <Down>
+
 " to use ctags, we can `ctags -R .` to generate ctags
 " <c-]> to go to defination, <c-o> to go back, g<c-]> to list all candidates.
