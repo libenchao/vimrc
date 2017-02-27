@@ -199,5 +199,8 @@ set clipboard=unnamed
 set wildmenu
 set wildmode=full
 
+" set history number
+set history=200
+
 " to use ctags, we can `ctags -R .` to generate ctags
 " <c-]> to go to defination, <c-o> to go back, g<c-]> to list all candidates.
