@@ -195,5 +195,9 @@ highlight ColorColumn ctermbg=6
 " set clipboard
 set clipboard=unnamed
 
+" set prompt auto completion style
+set wildmenu
+set wildmode=full
+
 " to use ctags, we can `ctags -R .` to generate ctags
 " <c-]> to go to defination, <c-o> to go back, g<c-]> to list all candidates.
