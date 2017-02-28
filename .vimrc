@@ -182,9 +182,6 @@ set foldmethod=syntax
 set foldlevel=20
 set foldlevelstart=20
 
-" make shorter key timeout
-set timeoutlen=500
-
 " set completeopt
 set completeopt=menu,noinsert
 
