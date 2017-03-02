@@ -107,6 +107,12 @@ Plugin 'vim-scripts/indentpython.vim'
 " for good indentation.
 
 
+Plugin 'python-mode/python-mode'
+let g:pymode_python = 'python3'
+let g:pymode_rope_completion = 1
+let g:pymode_rope_complete_on_dot = 1
+
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""""end of my plugins""""""""""""""""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -213,3 +219,5 @@ set splitbelow
 
 " to use ctags, we can `ctags -R .` to generate ctags
 " <c-]> to go to defination, <c-o> to go back, g<c-]> to list all candidates.
+
+" to completion a path, we can use <c-x><c-f>
