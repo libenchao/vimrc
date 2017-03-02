@@ -203,5 +203,9 @@ set history=200
 cnoremap <c-p> <Up>
 cnoremap <c-n> <Down>
 
+" set split setting
+set splitright
+set splitbelow
+
 " to use ctags, we can `ctags -R .` to generate ctags
 " <c-]> to go to defination, <c-o> to go back, g<c-]> to list all candidates.
