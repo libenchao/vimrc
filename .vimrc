@@ -82,8 +82,10 @@ Plugin 'lrvick/Conque-Shell'
 " usage: :ConqueTermSplit zsh
 if has('mac')
     nnoremap <leader>s :ConqueTermSplit<Space>zsh<CR><CR>
+    nnoremap <leader>vs :ConqueTermVSplit<Space>zsh<CR><CR>
 elseif has('unix')
     nnoremap <leader>s :ConqueTermSplit<Space>bash<CR><CR>
+    nnoremap <leader>vs :ConqueTermVSplit<Space>bash<CR><CR>
 endif
 
 
@@ -109,8 +111,8 @@ Plugin 'vim-scripts/indentpython.vim'
 
 Plugin 'python-mode/python-mode'
 let g:pymode_python = 'python3'
-let g:pymode_rope_completion = 1
-let g:pymode_rope_complete_on_dot = 1
+let g:pymode_rope_completion = 0
+let g:pymode_rope_complete_on_dot = 0
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
