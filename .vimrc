@@ -219,6 +219,9 @@ cnoremap <c-n> <Down>
 set splitright
 set splitbelow
 
+" set line wrap
+set wrap
+
 " to use ctags, we can `ctags -R .` to generate ctags
 " <c-]> to go to defination, <c-o> to go back, g<c-]> to list all candidates.
 
