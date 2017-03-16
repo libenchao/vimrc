@@ -2,7 +2,7 @@ set nocompatible
 filetype off
 
 " set leader
-let mapleader = ','
+let mapleader = ' '
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -109,10 +109,10 @@ Plugin 'vim-scripts/indentpython.vim'
 " for good indentation.
 
 
-Plugin 'python-mode/python-mode'
-let g:pymode_python = 'python3'
-let g:pymode_rope_completion = 0
-let g:pymode_rope_complete_on_dot = 0
+" Plugin 'python-mode/python-mode'
+" let g:pymode_python = 'python3'
+" let g:pymode_rope_completion = 0
+" let g:pymode_rope_complete_on_dot = 0
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
