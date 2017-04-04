@@ -222,6 +222,9 @@ set splitbelow
 " set line wrap
 set wrap
 
+" shortcut for muting search highlight
+nnoremap <silent> <leader>l :<C-u>nohlsearch<CR>
+
 " to use ctags, we can `ctags -R .` to generate ctags
 " <c-]> to go to defination, <c-o> to go back, g<c-]> to list all candidates.
 
