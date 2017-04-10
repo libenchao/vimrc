@@ -220,9 +220,11 @@ set infercase
 " <c-x><c-n> to complete from current file
 " <c-x><c-i> to complete from included files
 " <c-n> to compelte from buffer list, included files, tag files
-"
-" to use ctags, we can `ctags -R .` to generate ctags
-" <c-]> to go to defination, <c-o> to go back, g<c-]> to list all candidates.
+
+nnoremap  <leader>T :!ctags -R<CR>
+" <c-]> to go to defination
+" <c-t> to go back
+" g<c-]> to list all candidates.
 
 " set colorcolumn
 set colorcolumn=100
