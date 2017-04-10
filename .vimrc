@@ -211,7 +211,7 @@ set foldlevel=20
 set foldlevelstart=20
 
 " set completeopt
-set completeopt=menu,noinsert
+set completeopt=menuone,noinsert,preview
 
 " set colorcolumn
 set colorcolumn=100
@@ -250,6 +250,9 @@ function! s:VSetSearch()
 endfunction
 xnoremap * :<C-u>call <SID>VSetSearch()<CR>/<C-R>=@/<CR><CR> 
 xnoremap # :<C-u>call <SID>VSetSearch()<CR>?<C-R>=@/<CR><CR>
+
+" for autocompletion case sensitive when ignorecase is set
+set infercase
 
 " to use ctags, we can `ctags -R .` to generate ctags
 " <c-]> to go to defination, <c-o> to go back, g<c-]> to list all candidates.
