@@ -114,21 +114,38 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
+let g:syntastic_python_checkers = ['flake8']
+
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 let g:syntastic_check_on_w = 0
 let g:syntastic_mode_map = {'mode': 'passive'}
+
 nnoremap <leader>b :SyntasticCheck<CR>
 nnoremap <leader>lo :lopen<CR>
 nnoremap <leader>lc :lclose<CR>
 
 
-" Plugin 'python-mode/python-mode'
-" let g:pymode_python = 'python3'
-" let g:pymode_rope_completion = 0
-" let g:pymode_rope_complete_on_dot = 0
+Plugin 'davidhalter/jedi-vim'
+" let g:syntastic_check_on_wq = 0
+" let g:jedi#auto_vim_configuration = 0
+let g:jedi#use_tabs_not_buffers = 1
+" let g:jedi#use_splits_not_buffers = "left"
+" let g:jedi#popup_on_dot = 0
+" let g:jedi#popup_select_first = 0
+" let g:jedi#show_call_signatures = "1"
+
+let g:jedi#goto_command = "<leader>de"
+let g:jedi#goto_assignments_command = "<leader>as"
+" let g:jedi#goto_definitions_command = ""
+let g:jedi#documentation_command = "<leader>do"
+let g:jedi#usages_command = "<leader>us"
+let g:jedi#completions_command = "<leader>co"
+let g:jedi#rename_command = "<leader>re"
+
+" let g:jedi#completions_enabled = 0
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -211,7 +228,7 @@ set foldlevel=20
 set foldlevelstart=20
 
 " set completeopt
-set completeopt=menuone,noinsert,preview
+set completeopt=menuone,noinsert
 set infercase
 " <c-x><c-f> to complete file name
 " <c-x><c-]> to complete from tags
