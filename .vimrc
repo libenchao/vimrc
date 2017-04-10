@@ -212,6 +212,17 @@ set foldlevelstart=20
 
 " set completeopt
 set completeopt=menuone,noinsert,preview
+set infercase
+" <c-x><c-f> to complete file name
+" <c-x><c-]> to complete from tags
+" <c-x><c-k> to complete from dictionary
+" <c-x><c-l> to complete line wise
+" <c-x><c-n> to complete from current file
+" <c-x><c-i> to complete from included files
+" <c-n> to compelte from buffer list, included files, tag files
+"
+" to use ctags, we can `ctags -R .` to generate ctags
+" <c-]> to go to defination, <c-o> to go back, g<c-]> to list all candidates.
 
 " set colorcolumn
 set colorcolumn=100
@@ -250,11 +261,3 @@ function! s:VSetSearch()
 endfunction
 xnoremap * :<C-u>call <SID>VSetSearch()<CR>/<C-R>=@/<CR><CR> 
 xnoremap # :<C-u>call <SID>VSetSearch()<CR>?<C-R>=@/<CR><CR>
-
-" for autocompletion case sensitive when ignorecase is set
-set infercase
-
-" to use ctags, we can `ctags -R .` to generate ctags
-" <c-]> to go to defination, <c-o> to go back, g<c-]> to list all candidates.
-
-" to completion a path, we can use <c-x><c-f>
