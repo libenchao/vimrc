@@ -244,7 +244,7 @@ nnoremap  <leader>T :!ctags -R<CR>
 " g<c-]> to list all candidates.
 
 " set colorcolumn
-set colorcolumn=100
+set colorcolumn=80
 highlight ColorColumn ctermbg=6
 
 " set clipboard
