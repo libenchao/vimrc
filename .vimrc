@@ -105,10 +105,6 @@ let g:NERDTrimTrailingWhitespace = 1
 " <leader>,<space> to trigger
 
 
-Plugin 'vim-scripts/indentpython.vim'
-" for good indentation.
-
-
 Plugin 'vim-syntastic/syntastic'
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
