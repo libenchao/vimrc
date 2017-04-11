@@ -185,6 +185,7 @@ set showmatch
 set ignorecase
 set incsearch
 set hlsearch
+set smartcase
 
 " show line number
 set nu
