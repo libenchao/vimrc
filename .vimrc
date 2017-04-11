@@ -144,6 +144,10 @@ let g:jedi#rename_command = "<leader>re"
 " let g:jedi#completions_enabled = 0
 
 
+Plugin 'hdima/python-syntax'
+let python_highlight_all = 1
+
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""""end of my plugins""""""""""""""""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
