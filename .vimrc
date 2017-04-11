@@ -45,7 +45,7 @@ let NERDTreeMouseMode = 2
 
 Plugin 'jistr/vim-nerdtree-tabs'
 " to open or close nerdtree
-map <leader>d :NERDTreeTabsToggle<CR>
+nnoremap <leader>d :NERDTreeTabsToggle<CR>
 " to manipulate dirs and files like create and delete, `m` to list operations.
 
 
@@ -71,7 +71,7 @@ nnoremap <Leader>a :Ack!<Space>
 
 Plugin 'majutsushi/tagbar'
 " to show tags for current file.
-map <leader>t :TagbarToggle<CR>
+nnoremap <leader>t :TagbarToggle<CR>
 
 
 Plugin 'ervandew/supertab'
