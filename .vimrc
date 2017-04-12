@@ -270,7 +270,7 @@ set splitbelow
 set wrap
 
 " shortcut for muting search highlight
-nnoremap <silent> <leader>l :<C-u>nohlsearch<CR>
+nnoremap <silent> <leader>ll :<C-u>nohlsearch<CR>
 
 " for easy search on selected text
 function! s:VSetSearch()
