@@ -138,7 +138,7 @@ let g:jedi#goto_assignments_command = "<leader>as"
 " let g:jedi#goto_definitions_command = ""
 let g:jedi#documentation_command = "<leader>do"
 let g:jedi#usages_command = "<leader>us"
-let g:jedi#completions_command = "<leader>co"
+let g:jedi#completions_command = "<C-Space>"
 let g:jedi#rename_command = "<leader>re"
 
 " let g:jedi#completions_enabled = 0
