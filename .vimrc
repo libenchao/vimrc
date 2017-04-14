@@ -71,7 +71,7 @@ nnoremap <Leader>a :Ack!<Space>
 
 Plugin 'majutsushi/tagbar'
 " to show tags for current file.
-nnoremap <leader>t :TagbarToggle<CR>
+nnoremap <leader>ta :TagbarToggle<CR>
 
 
 Plugin 'ervandew/supertab'
@@ -270,7 +270,7 @@ set splitbelow
 set wrap
 
 " shortcut for muting search highlight
-nnoremap <silent> <leader>l :<C-u>nohlsearch<CR>
+nnoremap <silent> <leader>ll :<C-u>nohlsearch<CR>
 
 " for easy search on selected text
 function! s:VSetSearch()
@@ -281,3 +281,18 @@ function! s:VSetSearch()
 endfunction
 xnoremap * :<C-u>call <SID>VSetSearch()<CR>/<C-R>=@/<CR><CR> 
 xnoremap # :<C-u>call <SID>VSetSearch()<CR>?<C-R>=@/<CR><CR>
+
+" mapping for moving between tabs
+nnoremap <leader>th gT
+nnoremap <leader>tl gt
+
+" mapping for moving between windows
+nnoremap <leader>wh <c-w>h
+nnoremap <leader>wj <c-w>j
+nnoremap <leader>wk <c-w>k
+nnoremap <leader>wl <c-w>l
+
+" for easy quiting vim and saving
+nnoremap <leader>ww :w<CR>
+nnoremap <leader>wq :wq<CR>
+nnoremap <leader>q :q<CR>
