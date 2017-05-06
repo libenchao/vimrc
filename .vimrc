@@ -72,6 +72,7 @@ nnoremap <Leader>a :Ack!<Space>
 Plugin 'majutsushi/tagbar'
 " to show tags for current file.
 nnoremap <leader>ta :TagbarToggle<CR>
+let g:tagbar_map_showproto = 'pr'
 
 
 Plugin 'ervandew/supertab'
@@ -131,14 +132,14 @@ let g:jedi#use_tabs_not_buffers = 1
 " let g:jedi#use_splits_not_buffers = "left"
 " let g:jedi#popup_on_dot = 0
 " let g:jedi#popup_select_first = 0
-" let g:jedi#show_call_signatures = "1"
+let g:jedi#show_call_signatures = "0"
 
 let g:jedi#goto_command = "<leader>de"
 let g:jedi#goto_assignments_command = "<leader>as"
 " let g:jedi#goto_definitions_command = ""
 let g:jedi#documentation_command = "<leader>do"
 let g:jedi#usages_command = "<leader>us"
-let g:jedi#completions_command = "<C-Space>"
+let g:jedi#completions_command = "<C-c><C-c>"
 let g:jedi#rename_command = "<leader>re"
 
 " let g:jedi#completions_enabled = 0
@@ -146,6 +147,17 @@ let g:jedi#rename_command = "<leader>re"
 
 Plugin 'hdima/python-syntax'
 let python_highlight_all = 1
+
+
+Plugin 'Vimjas/vim-python-pep8-indent'
+
+
+Plugin 'fisadev/vim-isort'
+let g:vim_isort_map = "<leader>ri"
+
+
+" Plugin 'tweekmonster/braceless.vim'
+" autocmd FileType python BracelessEnable +highlight
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -276,10 +288,10 @@ nnoremap <silent> <leader>ll :<C-u>nohlsearch<CR>
 function! s:VSetSearch()
     let temp = @s
     norm! gv"sy
-    let @/ = '\V' . substitute(escape(@s, '/\'), '\n', '\\n', 'g') 
+    let @/ = '\V' . substitute(escape(@s, '/\'), '\n', '\\n', 'g')
     let @s = temp
 endfunction
-xnoremap * :<C-u>call <SID>VSetSearch()<CR>/<C-R>=@/<CR><CR> 
+xnoremap * :<C-u>call <SID>VSetSearch()<CR>/<C-R>=@/<CR><CR>
 xnoremap # :<C-u>call <SID>VSetSearch()<CR>?<C-R>=@/<CR><CR>
 
 " mapping for moving between tabs
@@ -296,3 +308,5 @@ nnoremap <leader>wl <c-w>l
 nnoremap <leader>ww :w<CR>
 nnoremap <leader>wq :wq<CR>
 nnoremap <leader>q :q<CR>
+
+autocmd BufWritePre * :%s/\s\+$//e
