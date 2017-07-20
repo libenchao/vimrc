@@ -160,6 +160,9 @@ let g:vim_isort_map = "<leader>ri"
 " autocmd FileType python BracelessEnable +highlight
 
 
+Plugin 'stephpy/vim-yaml'
+
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""""end of my plugins""""""""""""""""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -224,7 +227,7 @@ set termencoding=utf-8
 set encoding=utf-8
 
 " set colorscheme
-colorscheme solarized
+" colorscheme solarized
 
 " for mac bug, `return` cannot use.
 set backspace=2
@@ -258,7 +261,7 @@ nnoremap  <leader>T :!ctags -R<CR>
 
 " set colorcolumn
 set colorcolumn=80
-highlight ColorColumn ctermbg=6
+highlight ColorColumn ctermbg=150
 
 " set clipboard
 set clipboard=unnamed
