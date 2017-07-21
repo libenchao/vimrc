@@ -112,7 +112,7 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
 let g:syntastic_python_checkers = ['flake8']
-
+let g:syntastic_python_flake8_post_args="--max-line-length=120"
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 0
@@ -260,7 +260,7 @@ nnoremap  <leader>T :!ctags -R<CR>
 " g<c-]> to list all candidates.
 
 " set colorcolumn
-set colorcolumn=80
+set colorcolumn=120
 highlight ColorColumn ctermbg=150
 
 " set clipboard
